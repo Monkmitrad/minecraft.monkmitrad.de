@@ -1,0 +1,17 @@
+version: '2'
+services:
+  minecraft-monkmitrad-de:
+    restart: always
+    image: monkmitrad/minecraft-monkmitrad-de
+    build: .
+    environment:
+      - VIRTUAL_HOST=
+      - LETSENCRYPT_HOST=
+      - LETSENCRYPT_EMAIL=
+    networks:
+      - docker-frontproxy_default
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+networks:
+  docker-frontproxy_default:
+    external: true

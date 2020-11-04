@@ -1,6 +1,8 @@
 # MinecraftMonkmitrad
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.1.
+
+You can use this project with docker-compose. It is configured to work together with my frontproxy. You just have to put in the domain-name in the VIRTUAL_HOST variable in the docker-compose.yaml file to be served.
 
 ## Development server
 
